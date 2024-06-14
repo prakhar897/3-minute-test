@@ -16,7 +16,7 @@ const CompletionScreen: React.FC<CompletionScreenProps> = ({ inputs, timeLeft, o
     : "You've failed the test. Pay attention next time!";
 
   const allAnswers = inputs.map((input, index) => `Q${index + 1}: ${input || '(No answer)'}`).join(' | ');
-  const shareMessage = `I just took the Three Minute Test! ${resultMessage} My answers: ${allAnswers} Try it out: https://three-minute-test.vercel.app`;
+  const shareMessage = `I just took the Three Minute Test! Try it out: https://3-minute-test.softwaredesign.ing/`;
 
   const { hasCopied, onCopy } = useClipboard(shareMessage);
 
